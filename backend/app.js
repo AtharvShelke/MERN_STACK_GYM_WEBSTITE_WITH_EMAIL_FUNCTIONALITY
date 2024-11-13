@@ -6,7 +6,7 @@ import { sendEmail } from "./utils/sendEmail.js";
 const app = express();
 const router = express.Router();
 
-config({ path: "./config.env" });
+config({ path: "./.env" });
 
 app.use(
   cors({
@@ -31,7 +31,7 @@ router.post("/send/mail", async (req, res, next) => {
   }
   try {
     await sendEmail({
-      email: "merndeveloper4@gmail.com",
+      email: "atharvshelke964@gmail.com",
       subject: "GYM WEBSITE CONTACT",
       message,
       userEmail: email,
